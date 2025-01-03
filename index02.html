@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #333333;
+    }
+
+    .container {
+      width: 100%;
+      /* height: 100vh; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f2f2f2;
+    }
+
+    .header {
+      width: 100%;
+      height: 110px;
+      /* background-color: #f3f8f5; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        display: flex;
+        margin-right: 300px;
+
+        span {
+          font-size: 25px;
+          margin-left: 30px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 18px;
+        }
+      }
+
+      .btn {
+        display: flex;
+        font-size: 14px;
+        margin-top: 40px;
+
+        a {
+          color: #337AB7;
+          text-decoration: none;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+
+
+    }
+
+    .main {
+      width: 100%;
+      /* height: 600px; */
+
+      .back {
+        width: 100%;
+        background-image: url('./images/back_one.jpg');
+        background-repeat: no-repeat;
+        display: flex;
+
+        .loginForm {
+          width: 360px;
+          height: 360px;
+          background-color: #ffffff;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 900px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .loginTitle {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+
+            p {
+              font-size: 18px;
+            }
+          }
+
+          .loginInput {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+
+            .inputItem {
+              width: 300px;
+              height: 40px;
+              background-color: #ffffff;
+              margin-top: 20px;
+
+              input {
+                width: 100%;
+                height: 100%;
+              }
+
+            }
+
+            .captcha {
+              width: 300px;
+              height: 35px;
+              background-color: #ffffff;
+              margin-top: 20px;
+              display: flex;
+
+              input {
+                width: 100%;
+                height: 100%;
+              }
+
+            }
+
+          }
+
+          .forgetPwd {
+            width: 100%;
+            height: 30px;
+            margin-left: 250px;
+
+            a {
+              color: #337AB7;
+              text-decoration: none;
+            }
+          }
+
+          .loginBtn {
+            width: 300px;
+            height: 40px;
+            background-color: #337AB7;
+            margin-left: 30px;
+            border: none;
+            color: #ffffff;
+
+            button {
+              width: 100%;
+              height: 100%;
+              border: none;
+              background-color: #337AB7;
+              color: #ffffff;
+            }
+          }
+
+          .other {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+
+            p {
+              font-size: 14px;
+            }
+
+            img {
+              margin-left: 10px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+
+      .features {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+
+        .features-left {
+          width: 55%;
+          height: 100%;
+          display: flex;
+
+          .features-left-item {
+            margin-top: 50px;
+            margin-left: 20px;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 14px;
+              margin-top: 10px;
+            }
+          }
+        }
+
+        .features-right {
+          width: 45%;
+          height: 100%;
+          display: flex;
+
+          .l-line {
+            width: 1px;
+            /* 设置宽度为1像素，使其看起来像一条竖线 */
+            height: 100px;
+            /* 设置高度为100像素，你可以根据需要调整这个值 */
+            background-color: #000;
+            /* 设置竖线的颜色 */
+            margin-top: 50px;
+            /* 设置左右外边距，使其与其他元素有一定的间距 */
+          }
+
+          .features-right-item {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+            a {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              text-decoration: none;
+              margin-bottom: 10px;
+
+              img {
+                width: 80px;
+                height: 80px;
+                margin-right: 10px;
+              }
+
+              p {
+                font-size: 14px;
+                margin: 0;
+              }
+            }
+          }
+
+
+        }
+      }
+
+
+
+    }
+
+    .footer {
+      width: 100%;
+      height: 100px;
+      background-color: #d8d6d2;
+      display: flex;
+
+
+      .left {
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        a {
+          color: #337AB7;
+          text-decoration: none;
+          font-size: 12px;
+          margin-right: 10px;
+        }
+      }
+
+      .center {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .right {
+        display: flex;
+        width: 30%;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        margin-right: 20px;
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="./images/logoImg.png" alt="西南科技大学">
+        <span>一站式网上服务大厅</span>
+      </div>
+      <div class="btn">
+        <a href="http://cas.swust.edu.cn/authserver/login?service=http%3A%2F%2Fsoa.swust.edu.cn%2F">登录</a>
+        <span>|</span>
+        <a href="http://cas.swust.edu.cn/authserver/login?service=http://uap.swust.edu.cn/uap/a/cas">个人中心</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="loginBtn">
+        <div class="back">
+          <div class="loginForm">
+            <div class="loginTitle">
+              <p>账号密码登录</p>
+            </div>
+            <div class="loginInput">
+              <div class="inputItem">
+                <input type="text" placeholder="请输入账号">
+              </div>
+              <div class="inputItem">
+                <input type="password" placeholder="请输入密码">
+              </div>
+              <div class="captcha">
+                <input type="text" placeholder="验证码">
+                <img src="./images/captcha.jpg" alt="验证码">
+              </div>
+            </div>
+            <div class="forgetPwd">
+              <a href="#">忘记密码？</a>
+            </div>
+            <div class="loginBtn">
+              <button>登录</button>
+            </div>
+            <div class="other">
+              <p>其他登录方式</p>
+              <img src="./images/weChat.png" alt="微信登录">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <div class="features-left">
+          <div class="features-left-item">
+            <h3>多平台融合</h3>
+            <p>身份认证标识多样化<br>提供统一权限管理API接口</p>
+          </div>
+          <div class="features-left-item">
+            <h3>统一登录</h3>
+            <p>一个登录入口<br>一个网址，一个账号，一次登录</p>
+          </div>
+          <div class="features-left-item">
+            <h3>流程引擎</h3>
+            <p>一站式申请<br>审批、办结、办事流程便捷高效</p>
+          </div>
+          <div class="features-left-item">
+            <h3>一站式服务</h3>
+            <p>数据多跑路<br>师生少跑腿，一键式办理</p>
+          </div>
+        </div>
+        <div class="features-right">
+          <div class="l-line"></div>
+          <div class="features-right-item">
+            <a href="https://dmp.swust.edu.cn" target="_blank" class="weChat">
+              <img src="./images/ask.png" alt="" class="wx_img">
+              <p>扫码提问</p>
+            </a>
+            <h4>数据维护平台</h4>
+          </div>
+          <div class="features-right-item">
+            <a href="javascript:;" class="weChat">
+              <img src="./images/app_Ding.png" alt="" class="wx_img">
+              <p>钉钉下载</p>
+            </a>
+            <h4>西南科大app新版</h4>
+          </div>
+          <div class="features-right-item">
+            <a href="https://www.dingtalk.com/download?from=zebra:offline" class="weChat">
+              <img src="./images/pc_Ding.jpg" alt="" class="wx_img">
+              <p>钉钉下载</p>
+            </a>
+            <h4>服务大厅PC端</h4>
+          </div>
+          <div class="features-right-item">
+            <a href="http://cas.swust.edu.cn/JinGe.zip" class="weChat">
+              <img src="./images/soft.png" alt="" class="wx_img">
+              <p>金格软件</p>
+            </a>
+            <h4>下载及安装说明</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left">
+        <a href="https://www.swust.edu.cn/">西南科技大学主页</a>
+        <a href="https://english.swust.edu.cn/">English Version</a>
+        <a href="https://news.swust.edu.cn/">西南科技大学新闻网</a>
+      </div>
+      <div class="center">
+        <p>Copyright © 2020 西南科技大学 网络与信息化处</p>
+      </div>
+      <div class="right">
+        <p>技术支持 0816-6089289</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
